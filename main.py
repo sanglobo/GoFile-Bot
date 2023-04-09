@@ -11,10 +11,10 @@ load_dotenv()
 
 Bot = Client(
     "GoFile-Bot",
-    bot_token=os.environ.get("BOT_TOKEN"), "5836338648:AAG-zGTyl1ZcuJ8CMhDFlImrOIjxTSH1YQ0"
-    api_id=int(os.environ.get("API_ID")), 27885485
-    api_hash=os.environ.get("API_HASH")
-), "7dd9974c713787410beae4a295cc1e2d"
+    bot_token=os.environ.get("BOT_TOKEN", "5836338648:AAG-zGTyl1ZcuJ8CMhDFlImrOIjxTSH1YQ0"
+),
+    api_id=int(os.environ.get("API_ID", 27885485)),
+    api_hash=os.environ.get("API_HASH", "7dd9974c713787410beae4a295cc1e2d")),
 
 INSTRUCTIONS = """
 I am a gofile uploader telegram bot. \
